@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RhoPhi Holdings</title>
+  <meta name="description" content="RhoPhi Holdings — Dual-jurisdiction trust holding company. UK & Ghana." />
+  <link rel="icon" type="image/png" href="assets/logos/rhophi.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/index.js"></script>
+  <script src="js/charts.js"></script>
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="nav-inner">
+    <a class="nav-brand" href="#">
+      <div id="nav-logo-wrap"></div>
+      <span class="nav-name">RhoPhi Holdings</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#structure">Structure</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+    <span class="nav-badge">UK &amp; GH — PRIVATE</span>
+  </nav>
+</header>
+
+<section id="overview">
+  <div id="hero">
+    <div class="hero-bg-lines"></div>
+    <div class="hero-content">
+      <div class="hero-label">Holding Company Overview</div>
+      <div class="hero-holding">
+        <div class="hero-logo-wrap" id="hero-logo-wrap"></div>
+        <div class="hero-text">
+          <div class="tagline" id="hero-tagline"></div>
+          <h1 id="hero-title">RhoPhi <span>Holdings</span></h1>
+          <p id="hero-desc"></p>
+        </div>
+      </div>
+      <div class="kpi-row">
+        <div class="kpi-cell">
+          <div class="kpi-label">Total AUM</div>
+          <div class="kpi-value" id="kpi-aum"></div>
+          <div class="kpi-sub">Across all subsidiaries</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-label">Portfolio Companies</div>
+          <div class="kpi-value" id="kpi-companies"></div>
+          <div class="kpi-sub">Active subsidiaries</div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-label">Founded</div>
+          <div class="kpi-value" id="kpi-founded"></div>
+          <div class="kpi-sub" id="kpi-jurisdictions"></div>
+        </div>
+        <div class="kpi-cell">
+          <div class="kpi-label">Dividend to Founders</div>
+          <div class="kpi-value" id="kpi-dividend"></div>
+          <div class="kpi-sub">Of general asset dividends</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="structure">
+  <div class="section-wrap">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Trust Structure</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="trust-structure">
+      <div class="trust-cell">
+        <h4>General Assets</h4>
+        <p>General Assets flow from the founder (&#961;&#966;) into the central pool, managed by the main RhoPhi Trust. These assets generate dividends distributed to Founders as primary beneficiaries.</p>
+        <div class="dividend-highlight" id="struct-dividend">20%</div>
+        <p>General asset dividend rate to Founders.</p>
+        <span class="trust-badge">MANAGED BY MAIN RHOPHI TRUST</span>
+      </div>
+      <div class="trust-cell">
+        <h4>Holdings Assets</h4>
+        <p>Holdings Assets are managed by the main RhoPhi Trust and comprise corporate subsidiaries and investment vehicles. Capital flows into portfolio companies and returns as distributions.</p>
+        <br/>
+        <p>Customer Assets are managed by individual customer trusts, with each customer as sole beneficiary holding the right to determine their own trust deed.</p>
+        <span class="trust-badge">LAYERED TRUST ARCHITECTURE</span>
+      </div>
+      <div class="trust-cell">
+        <h4>Customer Trust Model</h4>
+        <p>For each customer (e.g. Customer "A"):</p>
+        <br/>
+        <p>
+          <strong style="color:var(--gold)">Ownership</strong> — RhoPhi Trust<br/>
+          <strong style="color:var(--gold)">Management</strong> — "A" Trust<br/>
+          <strong style="color:var(--gold)">Beneficiary</strong> — Customer "A"
+        </p>
+        <br/>
+        <p>Customer "A" assets are a pro-rata beneficiary of General Assets of RhoPhi, with right to determine the trust deed for their own trust.</p>
+        <span class="trust-badge">PROPRIETARY CUSTOMER BENEFICIARY</span>
+      </div>
+      <div class="trust-cell">
+        <h4>Dual Jurisdictions</h4>
+        <p>RhoPhi Holdings operates under a dual-jurisdiction structure spanning the United Kingdom and the Republic of Ghana — enabling capital deployment, asset protection, and trust law benefits across both regulatory environments.</p>
+        <br/>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:.5rem">
+          <span class="trust-badge">🇬🇧 UNITED KINGDOM</span>
+          <span class="trust-badge">🇬🇭 GHANA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="section-wrap">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Portfolio Companies</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="portfolio-grid" id="portfolio-grid"></div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="section-wrap">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2>People Needed</h2>
+      <div class="section-rule"></div>
+    </div>
+    <div class="team-grid" id="team-grid"></div>
+  </div>
+</section>
+
+<footer id="site-footer">
+  <div class="footer-left">
+    <div class="footer-name" id="footer-name">RhoPhi Holdings</div>
+    <p>All rights reserved. Private &amp; Confidential.</p>
+    <div class="footer-jurisdictions">
+      <span class="juris-badge">🇬🇧 UK</span>
+      <span class="juris-badge">🇬🇭 GH</span>
+    </div>
+  </div>
+  <div class="footer-right">
+    <div>Trust-Holding Architecture</div>
+    <div>Founded <span id="footer-year">2024</span></div>
+    <div style="margin-top:.4rem;font-size:9px;color:rgba(232,228,216,0.1)">&#961;&#966; Holdings Ltd.</div>
+  </div>
+</footer>
+
+<div id="modal-overlay" role="dialog" aria-modal="true">
+  <div id="modal-box">
+    <button class="modal-close" id="modal-close" aria-label="Close">&#10005;</button>
+    <div class="modal-header">
+      <div class="modal-logo" id="modal-logo"></div>
+      <div>
+        <div class="modal-title" id="modal-title"></div>
+        <div class="modal-sector" id="modal-sector"></div>
+      </div>
+    </div>
+    <div class="modal-body">
+      <p id="modal-desc"></p>
+      <div class="modal-stats" id="modal-stats"></div>
+      <div class="modal-chart-wrap">
+        <div class="modal-chart-label">Profit / Loss — Last 6 Quarters (&#163;M)</div>
+        <div id="modal-chart"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const cfg = window.RHOPHI_CONFIG;
+  const h   = cfg.holding;
+  const C   = window.RhoPhiCharts;
+  const MAX_GROWTH = Math.max(...cfg.companies.map(c=>c.marketGrowthRate));
+
+  function fmtM(v){return'&#163;'+v.toFixed(1)+'M'}
+  function fmtShares(n){
+    if(n>=1e6)return(n/1e6).toFixed(1)+'M';
+    if(n>=1e3)return(n/1e3).toFixed(0)+'K';
+    return n.toString();
+  }
+  function initials(name){return name.split(/\s+/).map(w=>w[0]).join('').slice(0,3).toUpperCase()}
+
+  function imgWithFallback(src,name,size,fallbackClass){
+    const init=initials(name);
+    return `<img src="${src}" alt="${name}" style="width:${size};height:${size};object-fit:contain"
+      onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+      <span class="${fallbackClass}" style="display:none">${init}</span>`;
+  }
+
+  // NAV
+  document.getElementById('nav-logo-wrap').innerHTML=
+    `<div class="nav-logo-fallback" id="nav-logo-img">${imgWithFallback(h.logo,h.name,'28px','nav-logo-fallback')}</div>`;
+
+  // HERO
+  document.getElementById('hero-logo-wrap').innerHTML=
+    imgWithFallback(h.logo,h.name,'70px','hero-logo-placeholder');
+  document.getElementById('hero-tagline').textContent=h.tagline;
+  document.getElementById('hero-title').innerHTML=
+    h.name.replace('Holdings','<span>Holdings</span>');
+  document.getElementById('hero-desc').textContent=h.description;
+  document.getElementById('kpi-aum').textContent='£'+h.totalAUM+'M';
+  document.getElementById('kpi-companies').textContent=h.totalCompanies;
+  document.getElementById('kpi-founded').textContent=h.founded;
+  document.getElementById('kpi-jurisdictions').textContent=h.jurisdictions.join(' · ');
+  document.getElementById('kpi-dividend').textContent=cfg.structure.generalAssets.dividendRate+'%';
+  document.getElementById('struct-dividend').textContent=cfg.structure.generalAssets.dividendRate+'%';
+  document.getElementById('footer-year').textContent=h.founded;
+
+  // PORTFOLIO
+  const grid=document.getElementById('portfolio-grid');
+  cfg.companies.forEach(function(co){
+    const pl=co.profitLoss;
+    const lastPL=pl[pl.length-1];
+    const prevPL=pl[pl.length-2];
+    const plChange=lastPL-prevPL;
+    const plUp=lastPL>=0;
+    const chgUp=plChange>=0;
+    const init=initials(co.name);
+
+    const card=document.createElement('div');
+    card.className='company-card';
+    card.dataset.id=co.id;
+
+    card.innerHTML=
+      '<div class="card-header">'+
+        '<div class="card-logo">'+
+          '<img src="'+co.logo+'" alt="'+co.name+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'+
+          '<span class="card-logo-initials" style="display:none">'+init+'</span>'+
+        '</div>'+
+        '<div class="card-title-group">'+
+          '<div class="card-name">'+co.name+'</div>'+
+          '<div class="card-sector">'+co.sector+'</div>'+
+          '<div class="card-tags">'+co.tags.map(function(t){return'<span class="card-tag">'+t+'</span>'}).join('')+'</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="card-metrics">'+
+        '<div class="metric"><div class="metric-label">Valuation</div><div class="metric-value">&#163;'+co.valuation.toFixed(1)+'M</div><div class="metric-sub">Estimated</div></div>'+
+        '<div class="metric"><div class="metric-label">P&amp;L Latest Qtr</div><div class="metric-value '+(plUp?'up':'down')+'">'+(plUp?'+':'')+lastPL.toFixed(1)+'M</div><div class="metric-sub">'+(chgUp?'&#9650;':'&#9660;')+' '+Math.abs(plChange).toFixed(1)+'M vs prev</div></div>'+
+        '<div class="metric"><div class="metric-label">Market Growth</div><div class="metric-value up">'+co.marketGrowthRate+'%</div><div class="metric-sub">Annual projected</div></div>'+
+      '</div>'+
+      '<div class="card-charts">'+
+        '<div class="chart-block" style="flex:3">'+
+          '<div class="chart-title">Profit / Loss &#8212; 6 Quarters</div>'+
+          C.sparkline(co.profitLoss,{width:200,height:58,id:co.id})+
+        '</div>'+
+        '<div class="chart-block" style="flex:2">'+
+          '<div class="chart-title">Market Growth Potential</div>'+
+          '<div class="growth-pct">'+co.marketGrowthRate+'%</div>'+
+          C.growthBar(co.marketGrowthRate,MAX_GROWTH,{width:130})+
+          '<div class="growth-label" style="margin-top:5px">vs sector max</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="card-desc">'+co.description+'</div>'+
+      '<div class="card-footer">'+
+        '<div class="card-footer-shares">'+
+          '<div class="shares-donut">'+C.donut(co.shares.available,co.shares.total,{id:co.id})+'</div>'+
+          '<div class="shares-info">'+
+            '<div class="shares-avail">'+fmtShares(co.shares.available)+' available</div>'+
+            '<div class="shares-total">of '+fmtShares(co.shares.total)+' total</div>'+
+          '</div>'+
+        '</div>'+
+        '<button class="card-cta">View Details &#8594;</button>'+
+      '</div>';
+
+    grid.appendChild(card);
+    card.addEventListener('click',function(){openModal(co.id)});
+  });
+
+  // TEAM
+  const tg=document.getElementById('team-grid');
+  cfg.team.forEach(function(m,i){
+    const el=document.createElement('div');
+    el.className='team-card';
+    el.innerHTML=
+      '<div class="team-status '+(m.filled?'filled':'open')+'"></div>'+
+      '<div class="team-num">0'+(i+1)+'</div>'+
+      '<div class="team-role">'+m.role+'</div>'+
+      '<div class="team-fill-label '+(m.filled?'filled':'open')+'">'+(m.filled?'Position Filled':'Seeking Candidate')+'</div>';
+    tg.appendChild(el);
+  });
+
+  // MODAL
+  var overlay=document.getElementById('modal-overlay');
+  document.getElementById('modal-close').addEventListener('click',closeModal);
+  overlay.addEventListener('click',function(e){if(e.target===overlay)closeModal()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
+
+  function openModal(id){
+    var co=cfg.companies.find(function(c){return c.id===id});
+    if(!co)return;
+    var init=initials(co.name);
+    var pl=co.profitLoss;
+    var lastPL=pl[pl.length-1];
+
+    document.getElementById('modal-logo').innerHTML=
+      '<img src="'+co.logo+'" alt="'+co.name+'" style="width:100%;height:100%;object-fit:contain" onerror="this.outerHTML=\'<span class=\\\'modal-logo-init\\\'>'+init+'</span>\'">';
+    document.getElementById('modal-title').textContent=co.name;
+    document.getElementById('modal-sector').textContent=co.sector;
+    document.getElementById('modal-desc').textContent=co.description;
+    document.getElementById('modal-stats').innerHTML=
+      '<div class="modal-stat"><div class="modal-stat-label">Valuation</div><div class="modal-stat-value">&#163;'+co.valuation.toFixed(1)+'M</div></div>'+
+      '<div class="modal-stat"><div class="modal-stat-label">P&amp;L Latest</div><div class="modal-stat-value">'+(lastPL>=0?'+':'')+lastPL.toFixed(1)+'M</div></div>'+
+      '<div class="modal-stat"><div class="modal-stat-label">Market Growth</div><div class="modal-stat-value">'+co.marketGrowthRate+'%</div></div>'+
+      '<div class="modal-stat"><div class="modal-stat-label">Shares Available</div><div class="modal-stat-value">'+fmtShares(co.shares.available)+'</div></div>'+
+      '<div class="modal-stat"><div class="modal-stat-label">Total Shares</div><div class="modal-stat-value">'+fmtShares(co.shares.total)+'</div></div>'+
+      '<div class="modal-stat"><div class="modal-stat-label">Float</div><div class="modal-stat-value">'+Math.round(co.shares.available/co.shares.total*100)+'%</div></div>';
+    document.getElementById('modal-chart').innerHTML=
+      C.sparkline(co.profitLoss,{width:520,height:100,id:co.id+'-modal'});
+    overlay.classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+
+  function closeModal(){
+    overlay.classList.remove('open');
+    document.body.style.overflow='';
+  }
+})();
+</script>
+</body>
+</html>
